@@ -205,8 +205,8 @@ elasticsearch:
     ingest: "true"
     data: "true"
 
-  replicas: 3
-  minimumMasterNodes: 2
+  replicas: 2
+  minimumMasterNodes: 1
 
   esMajorVersion: ""
 
