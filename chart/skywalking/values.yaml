@@ -106,7 +106,7 @@ oap:
   # Note: The default configmap data is empty, please refer to the detailed documentation (https://github.com/apache/skywalking/blob/master/docs/en/setup/backend/dynamic-config.md)
   # Sync period in seconds. Defaults to 60 seconds.
   dynamicConfig:
-    enabled: false
+    enabled: true
     period: 60
     config: {}
     #  agent-analyzer.default.slowDBAccessThreshold: default:200,mongodb:50
@@ -272,7 +272,7 @@ elasticsearch:
     accessModes: [ "ReadWriteOnce" ]
     resources:
       requests:
-        storage: 30Gi
+        storage: 20Gi
 
   rbac:
     create: false
@@ -429,7 +429,7 @@ elasticsearch:
   keystore: []
 
 postgresql:
-  enabled: false # Whether to start a demo postgresql deployment, don't use this for production.
+  enabled: false  # Whether to start a demo postgresql deployment, don't use this for production.
   config:
     # The hostname of your own postgresql service, this only takes effect when postgresql.enabled is false.
     host: postgresql-service.your-awesome-company.com
