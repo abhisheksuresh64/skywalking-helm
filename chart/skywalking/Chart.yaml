@@ -25,9 +25,9 @@ maintainers:
   - name: Abhishek Suresh
     email: abhishekchithira@gmail.com
 
-dependencies:
-  - name: elasticsearch
-    version: ~7.17.1
-    repository: https://helm.elastic.co/
-    condition: elasticsearch.enabled
+# dependencies:
+#   - name: elasticsearch
+#     version: ~7.17.1
+#     repository: https://helm.elastic.co/
+#     condition: elasticsearch.enabled
   
