@@ -184,7 +184,7 @@ oapInit:
   # sidecar.istio.io/inject: false
 
 elasticsearch:
-  enabled: true
+  enabled: false
   config:               # For users of an existing elasticsearch cluster,takes effect when `elasticsearch.enabled` is false
     port:
       http: 9200
