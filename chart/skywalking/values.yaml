@@ -186,13 +186,13 @@ oapInit:
 elasticsearch:
   enabled: false
   config:               # For users of an existing elasticsearch cluster,takes effect when `elasticsearch.enabled` is false
-    host: elasticsearch-master
+    host: elasticsearch
     port:
       http: 9200 # es service on kubernetes or host
     # user: "xxx"         # [optional]
     # password: "xxx"     # [optional]
   clusterName: "elasticsearch"
-  nodeGroup: "master"
+  # nodeGroup: "master"
 
   # The service that non master groups will try to connect to when joining the cluster
   # This should be set to clusterName + "-" + nodeGroup for your master group
